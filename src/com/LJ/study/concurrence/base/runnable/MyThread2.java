@@ -1,4 +1,4 @@
-package com.LJ.study.concurrence.base;
+package com.LJ.study.concurrence.base.runnable;
 
 public class MyThread2 implements Runnable{
     // 重写run方法
