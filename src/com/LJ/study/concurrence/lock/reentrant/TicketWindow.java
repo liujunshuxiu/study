@@ -27,6 +27,13 @@ public class TicketWindow implements Runnable {
             }finally {
                 lock.unlock();
             }
+            System.out.println("释放锁!");
+            try {
+                Thread.sleep(1000 * 6);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("释放锁后睡眠结束!");
         }
     }
 }
