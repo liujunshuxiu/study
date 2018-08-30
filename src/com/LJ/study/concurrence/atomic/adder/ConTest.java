@@ -1,4 +1,4 @@
-package com.LJ.study.concurrence;
+package com.LJ.study.concurrence.atomic.adder;
 
 import java.util.concurrent.atomic.LongAdder;
 
