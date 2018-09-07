@@ -6,12 +6,12 @@ public class BoundedTest {
         BoundedBuffer bb = new BoundedBuffer();
 
         //新建写线程
-        for(int i = 0 ;i < 2;i++){
+        for(int i = 0 ;i < 6;i++){
             int finalI = i;
             Thread put = new Thread(new Runnable() {
                 @Override
                 public void run() {
-//                    System.out.println("当前是写线程，编号"+ finalI);
+                    System.out.println("当前是写线程，编号"+ finalI);
                     bb.put("当前是写线程，编号"+ finalI);
                 }
             });
@@ -28,15 +28,14 @@ public class BoundedTest {
         System.out.println(bb.count);
         
         //新建读线程
-        for(int i = 0 ;i < 2;i++){
+        for(int i = 0 ;i < 6;i++){
             int finalI = i;
             Thread take = new Thread(new Runnable() {
                 @Override
                 public void run() {
                     try {
                         String s = (String)bb.take();
-                        System.out.println("当前是写线程，编号"+ finalI+"，读取结果："+s);
-                        System.out.println("mark????当前是写线程，编号"+ finalI);
+                        System.out.println("当前是读线程，编号"+ finalI+"，读取结果："+s);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
