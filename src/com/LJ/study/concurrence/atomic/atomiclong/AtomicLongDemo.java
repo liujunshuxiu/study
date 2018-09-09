@@ -19,5 +19,6 @@ public class AtomicLongDemo {
             };
             thread.start();
         }
+        System.out.println("long计算结束");
     }
 }

@@ -14,18 +14,19 @@ class Counter extends Thread {
 
 
     //使用原子类去更新
-//    private static AtomicLong counter = new AtomicLong(0);
-//
-//    public static long addOne() {
-//        return counter.incrementAndGet();
-//    }
-
-    private volatile long counter = 0;
-
-    static AtomicLongFieldUpdater updater = AtomicLongFieldUpdater.newUpdater(Counter.class, "counter");
-    static Counter safeCounter = new Counter ();
+    private static AtomicLong counter = new AtomicLong(0);
 
     public static long addOne() {
-        return updater.addAndGet(safeCounter, 1);
+//        AtomicLong counter = new AtomicLong(0);
+        return counter.incrementAndGet();
     }
+
+//    private volatile long counter = 0;
+//
+//    static AtomicLongFieldUpdater updater = AtomicLongFieldUpdater.newUpdater(Counter.class, "counter");
+//    static Counter safeCounter = new Counter ();
+//
+//    public static long addOne() {
+//        return updater.addAndGet(safeCounter, 1);
+//    }
 }
