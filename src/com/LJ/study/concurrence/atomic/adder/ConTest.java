@@ -17,11 +17,5 @@ public class ConTest {
         return counter;
     }
 
-    public static void main(String[] args){
 
-        ConTest test = new ConTest();
-        test.addOne();
-        test.addOne();
-        System.out.println("123");
-    }
 }
