@@ -1,6 +1,6 @@
-package study.spring.dao.impl;
+package study.spring.ioc.dao.impl;
 
-import study.spring.dao.UserDao;
+import study.spring.ioc.dao.UserDao;
 
 public class UserDaoImpl implements UserDao {
 

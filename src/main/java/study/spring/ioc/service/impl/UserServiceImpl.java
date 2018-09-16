@@ -1,7 +1,7 @@
-package study.spring.service.impl;
+package study.spring.ioc.service.impl;
 
-import study.spring.dao.UserDao;
-import study.spring.service.UserService;
+import study.spring.ioc.dao.UserDao;
+import study.spring.ioc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;

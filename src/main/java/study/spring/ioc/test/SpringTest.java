@@ -1,6 +1,6 @@
-package study.spring.test;
+package study.spring.ioc.test;
 
-import study.spring.service.UserService;
+import study.spring.ioc.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 

@@ -1,9 +1,9 @@
-package study.spring.conf;
+package study.spring.ioc.conf;
 
-import study.spring.dao.AccountDao;
-import study.spring.dao.impl.AccountDaoImpl;
-import study.spring.service.AccountService;
-import study.spring.service.impl.AccountServiceImpl;
+import study.spring.ioc.dao.AccountDao;
+import study.spring.ioc.dao.impl.AccountDaoImpl;
+import study.spring.ioc.service.AccountService;
+import study.spring.ioc.service.impl.AccountServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

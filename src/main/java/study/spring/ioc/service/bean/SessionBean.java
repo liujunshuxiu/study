@@ -1,10 +1,10 @@
-package study.spring.service.bean;
+package study.spring.ioc.service.bean;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(value = "request" , proxyMode = ScopedProxyMode.TARGET_CLASS)
-public class RequestBean {
+@Scope(value = "session" , proxyMode = ScopedProxyMode.TARGET_CLASS)
+public class SessionBean {
 }

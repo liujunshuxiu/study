@@ -1,6 +1,6 @@
-package study.spring.dao.impl;
+package study.spring.ioc.dao.impl;
 
-import study.spring.dao.AccountDao;
+import study.spring.ioc.dao.AccountDao;
 
 public class AccountDaoImpl implements AccountDao {
     @Override

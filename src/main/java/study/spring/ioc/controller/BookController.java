@@ -1,9 +1,9 @@
-package study.spring.controller;
+package study.spring.ioc.controller;
 
-import study.spring.service.bean.PrototypeBean;
-import study.spring.service.bean.RequestBean;
-import study.spring.service.bean.SessionBean;
-import study.spring.service.bean.SingletonBean;
+import study.spring.ioc.service.bean.PrototypeBean;
+import study.spring.ioc.service.bean.RequestBean;
+import study.spring.ioc.service.bean.SessionBean;
+import study.spring.ioc.service.bean.SingletonBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

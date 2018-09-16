@@ -1,4 +1,4 @@
-package study.spring.service.bean;
+package study.spring.ioc.service.bean;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
