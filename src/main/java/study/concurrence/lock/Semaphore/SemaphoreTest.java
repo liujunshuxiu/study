@@ -4,6 +4,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
+/**
+ * https://blog.csdn.net/panweiwei1994/article/details/78827248
+ */
 public class SemaphoreTest {
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();

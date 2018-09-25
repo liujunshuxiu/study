@@ -1,5 +1,7 @@
 package study.util;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -65,21 +67,23 @@ public class LJTest {
 //        testMap.get(1);
 
 
-//        Map<String,String> hashMapStudy = new HashMap<>();
-//        for(int i = 0;i<100;i++ ){
-//            if(i == 15){
-//                System.out.println(i);
-//            }
-//            hashMapStudy.put(""+i,""+i);
-//        }
-//        hashMapStudy.put("1","a");
-//        hashMapStudy.put("1","aLJ");
-//        hashMapStudy.put("2","b");
-//        hashMapStudy.put("3","c");
-//        hashMapStudy.put("4","d");
-//
-//        hashMapStudy.get("3");
+        Map<String,String> hashMapStudy = new HashMap<>();
+        for(int i = 0;i<100;i++ ){
+            if(i == 15){
+                System.out.println(i);
+            }
+            hashMapStudy.put(""+i,""+i);
+        }
+        hashMapStudy.put("1","a");
+        hashMapStudy.put("1","aLJ");
+        hashMapStudy.put("2","b");
+        hashMapStudy.put("3","c");
+        hashMapStudy.put("4","d");
 
+        hashMapStudy.get("3");
+
+        Set<Map.Entry<String, String>> entries = hashMapStudy.entrySet();
+        System.out.println(hashMapStudy);
 
 //        Map<String,List<Integer>> hashStringMapStudy = new HashMap<>();
 //        List<Integer> testAddList = new ArrayList<Integer>();
@@ -111,12 +115,12 @@ public class LJTest {
 //        hashSet.add("d");
 //        hashSet.add("e");
 
-        Set<String>  treeSet = new TreeSet<>();
-        treeSet.add("a");
-        treeSet.add("b");
-        treeSet.add("c");
-        treeSet.add("d");
-        treeSet.add("e");
+//        Set<String>  treeSet = new TreeSet<>();
+//        treeSet.add("a");
+//        treeSet.add("b");
+//        treeSet.add("c");
+//        treeSet.add("d");
+//        treeSet.add("e");
 
     }
 }

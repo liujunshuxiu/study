@@ -5,7 +5,8 @@ import java.util.concurrent.locks.ReentrantLock;
 public class TicketWindow implements Runnable {
 
     private int tickets = 100;
-    private final ReentrantLock lock = new ReentrantLock();
+//    private final ReentrantLock lock = new ReentrantLock();//非公平锁
+    private final ReentrantLock lock = new ReentrantLock(true);//公平锁
 
     @Override
     public void run() {
