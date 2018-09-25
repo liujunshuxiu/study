@@ -12,22 +12,46 @@ import java.util.concurrent.locks.LockSupport;
 public class LockSupportDemo {
     
     public static void main(String[] args) throws InterruptedException {
-        Thread thread = Thread.currentThread();
-        LockSupport.unpark(thread);
+        Thread mainThread = Thread.currentThread();
+
+        LockSupport.unpark(mainThread);
         TimeUnit.SECONDS.sleep(2);
         System.out.println("unpark finished");
 
-        LockSupport.park();
+        LockSupport.park(mainThread);
         TimeUnit.SECONDS.sleep(2);
         System.out.println("park finished");
 
         System.out.println("helloworld park");
 
-        //此时不会再进入
-        LockSupport.park();
-        System.out.println("park1 finished");
-        System.out.println("helloworld park1");
 
+        Thread thread2 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                LockSupport.park(mainThread);
+                System.out.println("Thread park1 finished");
+
+            }
+        });
+        thread2.start();
+        thread2.join();
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                LockSupport.unpark(mainThread);
+                try {
+                    TimeUnit.SECONDS.sleep(2);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Thread unpark1 finished");
+
+            }
+        });
+        thread.start();
+        System.out.println("helloworld park1");
 
         Thread t = new Thread(new Runnable() {
             @Override
@@ -45,14 +69,5 @@ public class LockSupportDemo {
         t.start();
         t.interrupt();
         
-//        List<String> list = new ArrayList<>();
-//        list.add("123");
-//        int a = 88;
-//        System.out.println(list);
-
-        BigDecimal strvalueMap = new BigDecimal(1);
-        BigDecimal strvalueEntity = new BigDecimal(2);
-        
-        System.out.println(strvalueEntity.compareTo(strvalueMap));
     }
 }
