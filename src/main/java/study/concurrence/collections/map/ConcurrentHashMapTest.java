@@ -40,8 +40,8 @@ public class ConcurrentHashMapTest {
         @Override
         public void run() {
             if (this.mMap != null) {
-                for (Map.Entry<Integer, String> entry : this.mMap.entrySet()) {
-                    System.out.println(Thread.currentThread().getName() + " ,key: " + entry.getKey() + ",value:" + entry.getValue());
+                for(Integer key : this.mMap.keySet()){
+                    System.out.println(Thread.currentThread().getName() + " ,key: " + key + ",value:" + this.mMap.get(key));
                 }
             }
         }
