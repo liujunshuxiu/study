@@ -12,7 +12,7 @@ import java.util.concurrent.locks.LockSupport;
 public class LockSupportDemo {
     
     public static void main(String[] args) throws InterruptedException {
-        Thread mainThread = Thread.currentThread();
+        final Thread mainThread = Thread.currentThread();
 
         LockSupport.unpark(mainThread);
         TimeUnit.SECONDS.sleep(2);

@@ -87,7 +87,7 @@ public class Point {
 
 
     public static void main(String[] args){
-        Point point = new Point();
+        final Point point = new Point();
 
         for(int i = 0 ;i < 6;i++){
             Thread move = new Thread(new Runnable() {
