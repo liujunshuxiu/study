@@ -119,6 +119,12 @@
       <version>RELEASE</version>
       <scope>compile</scope>
     </dependency>
+    <!--jdbc测试-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.0.8.RELEASE</version>
+    </dependency>
   </dependencies>
 
   <build>
