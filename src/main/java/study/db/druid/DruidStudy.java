@@ -1,4 +1,4 @@
-package db.druid;
+package study.db.druid;
 
 import com.alibaba.druid.filter.Filter;
 import com.alibaba.druid.filter.logging.Slf4jLogFilter;
@@ -6,16 +6,13 @@ import com.alibaba.druid.filter.stat.StatFilter;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 
-import javax.servlet.ServletContext;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -29,7 +26,7 @@ public class DruidStudy {
             // 1,创建Druid连接池对象
 //            DruidDataSource dataSource = new DruidDataSource();
 
-            File f = new File("C:/work/study/study/src/main/java/db/druid/druid.properties");
+            File f = new File("C:/work/study/study/src/main/java/study.db/druid/druid.properties");
             InputStream in = new FileInputStream(f);
             Properties properties = new Properties();
             properties.load(in);
