@@ -19,11 +19,18 @@ public class mainTest {
     }
 
     public static void main(String[] args){
-        int a = 0;
-        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3));
-        deal(a,list);
-        System.out.println(a);
-        System.out.println(list);
+//        int a = 0;
+//        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3));
+//        deal(a,list);
+//        System.out.println(a);
+//        System.out.println(list);
+
+        int i = 0 , j = 0;
+//        i = (i++);
+        i++;
+        j = j++;
+        System.out.println("i:"+i);
+        System.out.println("j:"+j);
     }
 
 
