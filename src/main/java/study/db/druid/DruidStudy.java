@@ -25,6 +25,7 @@ public class DruidStudy {
         try {
             // 1,创建Druid连接池对象
 //            DruidDataSource dataSource = new DruidDataSource();
+//            InputStream inputStream = DruidStudy.class.getClassLoader().getResourceAsStream("dbconfig.properties");
 
             File f = new File("C:/work/study/study/src/main/java/study.db/druid/druid.properties");
             InputStream in = new FileInputStream(f);
