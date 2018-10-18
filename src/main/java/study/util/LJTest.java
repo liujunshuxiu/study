@@ -59,10 +59,10 @@ public class LJTest {
 //       Integer a= testList.get(1);
 //        System.out.println("a="+a);
 
-//        Map<Integer, String> testMap = new HashMap<Integer, String>();
-//
-//        testMap.put(1, "java");
-//        testMap.put(2, "SX");
+        Map<Integer, String> testMap = new HashMap<Integer, String>();
+
+        testMap.put(1, "java");
+        testMap.put(2, "SX");
 //
 //        testMap.get(1);
 
