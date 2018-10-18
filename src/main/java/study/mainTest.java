@@ -1,8 +1,7 @@
 package study;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class mainTest {
 
@@ -24,13 +23,22 @@ public class mainTest {
 //        deal(a,list);
 //        System.out.println(a);
 //        System.out.println(list);
+        // 取出明天日期
+        Calendar calendar = new GregorianCalendar();
+        calendar.setTime(new Date());
+        calendar.add(Calendar.DATE, 1);
+        Date nextDate = calendar.getTime();
+        // 取明天是星期几
+        SimpleDateFormat dateFm = new SimpleDateFormat("EEEE",Locale.CHINESE);
+        String week = dateFm.format(nextDate);
 
-        int i = 0 , j = 0;
-//        i = (i++);
-        i++;
-        j = j++;
-        System.out.println("i:"+i);
-        System.out.println("j:"+j);
+        System.out.printf("week:%s",week);
+
+
+        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3));
+        list.sort((i1,i2) -> i1.compareTo(i2));
+
+
     }
 
 
