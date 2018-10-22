@@ -2,20 +2,24 @@ package study;
 
 public class MapStudyKey {
 
-    private int type;
+    private int value;
 
 
     public MapStudyKey() {
     }
 
-    public MapStudyKey(int type) {
-        this.type = type;
+    public MapStudyKey(int value) {
+        this.value = value;
     }
 
     @Override
     public int hashCode() {
         int a = 1;
-        return a;
+        if(value == 1 || value == 2){
+            return a;
+        }else{
+            return value;
+        }
     }
 
 
