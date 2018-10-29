@@ -7,36 +7,28 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ConcurrentHashMapStudy {
-    public static void main(String[] args){
-//        Map<String, String> mMap = new ConcurrentHashMap<String, String>();
-//
-//        mMap.put("1","1a");
-//        mMap.put("2","2b");
-//        mMap.put("3","3c");
-//
-//        mMap.get("2");
+    private static Map<String, String> mMap = new ConcurrentHashMap<>();
 
 
-        MapStudyKey key1 = new MapStudyKey(1);
-        MapStudyKey key2 = new MapStudyKey(2);
-        MapStudyKey key3 = new MapStudyKey(3);
-        MapStudyKey key4 = new MapStudyKey(4);
-        MapStudyKey key5 = new MapStudyKey(5);
-        MapStudyKey key6 = new MapStudyKey(6);
-        MapStudyKey key7 = new MapStudyKey(7);
-
-        Map<MapStudyKey, String> ljMap = new ConcurrentHashMap<MapStudyKey, String>();
-
-        ljMap.put(key1, "1");
-        ljMap.put(key2, "2");
-        ljMap.put(key3, "3");
-        ljMap.put(key4, "4");
-        ljMap.put(key5, "5");
-        ljMap.put(key6, "6");
-        ljMap.put(key7, "7");
+    public static class AddThread implements Runnable{
+        public void run(){
+            for(int k=0;k<999;k++)
+                //执行数组中元素自增操作,参数为index,即数组下标
+                mMap.put(Thread.currentThread().getName()+k+"",k+"");
+        }
+    }
 
 
-        ljMap.get(key3);
-        ljMap.get(key2);
+    public static void main(String[] args) throws InterruptedException {
+
+        Thread[] ts = new Thread[100];
+
+        for(int k = 0 ; k < 100;k++){
+            ts[k] = new Thread(new ConcurrentHashMapStudy.AddThread());
+        }
+
+        for(int k=0;k<100;k++){ts[k].start();}
+        for(int k=0;k<100;k++){ts[k].join();}
+        System.out.println(mMap.size());
     }
 }

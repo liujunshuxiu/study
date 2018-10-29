@@ -1,9 +1,6 @@
 package study.util;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class LJTest {
 
@@ -59,31 +56,31 @@ public class LJTest {
 //       Integer a= testList.get(1);
 //        System.out.println("a="+a);
 
-        Map<Integer, String> testMap = new HashMap<Integer, String>();
-
-        testMap.put(1, "java");
-        testMap.put(2, "SX");
+//        Map<Integer, String> testMap = new HashMap<Integer, String>();
 //
-//        testMap.get(1);
-
-
-        Map<String,String> hashMapStudy = new HashMap<>();
-        for(int i = 0;i<100;i++ ){
-            if(i == 15){
-                System.out.println(i);
-            }
-            hashMapStudy.put(""+i,""+i);
-        }
-        hashMapStudy.put("1","a");
-        hashMapStudy.put("1","aLJ");
-        hashMapStudy.put("2","b");
-        hashMapStudy.put("3","c");
-        hashMapStudy.put("4","d");
-
-        hashMapStudy.get("3");
-
-        Set<Map.Entry<String, String>> entries = hashMapStudy.entrySet();
-        System.out.println(hashMapStudy);
+//        testMap.put(1, "java");
+//        testMap.put(2, "SX");
+////
+////        testMap.get(1);
+//
+//
+//        Map<String,String> hashMapStudy = new HashMap<>();
+//        for(int i = 0;i<100;i++ ){
+//            if(i == 15){
+//                System.out.println(i);
+//            }
+//            hashMapStudy.put(""+i,""+i);
+//        }
+//        hashMapStudy.put("1","a");
+//        hashMapStudy.put("1","aLJ");
+//        hashMapStudy.put("2","b");
+//        hashMapStudy.put("3","c");
+//        hashMapStudy.put("4","d");
+//
+//        hashMapStudy.get("3");
+//
+//        Set<Map.Entry<String, String>> entries = hashMapStudy.entrySet();
+//        System.out.println(hashMapStudy);
 
 //        Map<String,List<Integer>> hashStringMapStudy = new HashMap<>();
 //        List<Integer> testAddList = new ArrayList<Integer>();
@@ -92,12 +89,12 @@ public class LJTest {
 //        }
 //        hashStringMapStudy.put("1",testAddList);
 
-//        Map<String,String> linkHashMap = new LinkedHashMap<>();
-//        linkHashMap.put("1","a");
-//        linkHashMap.put("1","aLJ");
-//        linkHashMap.put("2","b");
-//        linkHashMap.put("3","c");
-//        linkHashMap.put("4","d");
+        Map<String,String> linkHashMap = new LinkedHashMap<>();
+        linkHashMap.put("1","a");
+        linkHashMap.put("1","aLJ");
+        linkHashMap.put("2","b");
+        linkHashMap.put("3","c");
+        linkHashMap.put("4","d");
 
 
 //        Map<String,String> linkHashMap = new TreeMap<>();

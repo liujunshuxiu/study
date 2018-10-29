@@ -10,6 +10,7 @@ public class CountMainTest {
             ConTest.addOne();
             ConTest.addOne();
             ConTest.addOne();
-            System.out.println("123");
+
+            System.out.println("123:"+ConTest.getCounter());
     }
 }
