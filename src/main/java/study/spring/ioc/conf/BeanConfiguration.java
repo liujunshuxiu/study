@@ -11,15 +11,15 @@ import org.springframework.context.annotation.Configuration;
  * bean方式配置类关系，和spring-ioc.xml效果一样
  * 尽量避免使用这种方式，太混乱
  */
-@Configuration
+//@Configuration
 public class BeanConfiguration {
 
-    @Bean
+//    @Bean
     public AccountDao accountDao(){
         return new AccountDaoImpl();
     }
 
-    @Bean
+//    @Bean
     public AccountService accountService(){
         AccountServiceImpl bean = new AccountServiceImpl();
         bean.setAccountDao(accountDao());
