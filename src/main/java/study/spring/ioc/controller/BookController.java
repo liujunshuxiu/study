@@ -1,5 +1,8 @@
 package study.spring.ioc.controller;
 
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import study.spring.ioc.service.bean.PrototypeBean;
 import study.spring.ioc.service.bean.RequestBean;
 import study.spring.ioc.service.bean.SessionBean;
@@ -45,5 +48,13 @@ public class BookController {
         System.out.println("second time sessionBean is :" + sessionBean);
 
         System.out.println("===========================================");
+    }
+
+
+    @RequestMapping(value = "/corp/{suiteKey}/callback", method = {RequestMethod.GET})
+    public void callback(@PathVariable("suiteKey") String suiteKey, @RequestParam(value = "signature", required = false) String signature)
+    {
+        System.out.println("suiteKey is :" + suiteKey);
+        System.out.println("signature is :" + signature);
     }
 }
