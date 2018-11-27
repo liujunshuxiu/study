@@ -3,6 +3,7 @@ package study.concurrence.base.runnable;
 public class MyRunnableTest {
     public static void main(String[] args){
         MyThread2 mt = new MyThread2();
+//        MyThread mt = new MyThread();
         Thread t1 = new Thread(mt);
         Thread t2 = new Thread(mt);
 
