@@ -1,4 +1,4 @@
-package study.concurrence.lock.reentrant;
+package study.concurrence.lock.reentrant.ticket;
 
 import java.util.concurrent.locks.ReentrantLock;
 

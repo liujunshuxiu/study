@@ -1,4 +1,4 @@
-package study.concurrence.lock.reentrant;
+package study.concurrence.lock.reentrant.ticket;
 
 public class SeelTickets {
     public static void main(String[] args){

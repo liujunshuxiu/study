@@ -38,7 +38,8 @@ public class mainTest {
 //        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3));
 //        list.sort((i1,i2) -> i1.compareTo(i2));
 
-
+        String str = "";
+        System.out.println("长度:"+str.length());
 
 
     }
