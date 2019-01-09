@@ -28,5 +28,13 @@
     </bean>
 
     <!-- 自动扫描装配 -->
-    <context:component-scan base-package="study.spring"/>
+    <context:component-scan base-package="study.spring" >
+        <context:include-filter type="annotation"
+                            expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--使控制器注解生效-->
+    <mvc:annotation-driven/>
+    <!-- 容器默认的DefaultServletHandler处理 所有静态内容与无RequestMapping处理的URL-->
+    <mvc:default-servlet-handler/>
 </beans>

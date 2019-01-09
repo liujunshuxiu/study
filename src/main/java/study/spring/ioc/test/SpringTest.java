@@ -14,10 +14,10 @@ public class SpringTest {
         ApplicationContext applicationContext=new FileSystemXmlApplicationContext("web/WEB-INF/spring-ioc2.xml");
 
         //加载配置文件(@Configuration方式加载)
-//        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfiguration.class);
+//        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfiguration.ljclass);
 
 
-//        AccountService accountService=applicationContext.getBean("accountService",AccountService.class);
+//        AccountService accountService=applicationContext.getBean("accountService",AccountService.ljclass);
         //多次获取并不会创建多个accountService对象,因为spring默认创建是单实例的作用域
 //        AccountService accountService= (AccountService) applicationContext.getBean("accountService");
 //        accountService.doSomething();

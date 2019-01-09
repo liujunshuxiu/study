@@ -6,7 +6,7 @@ package study.spring.aop.ajc;
  */
 public aspect MyAspectJDemo {
 
-//    private static Log log = LogFactory.getLog(MyAspectJDemo.class);
+//    private static Log log = LogFactory.getLog(MyAspectJDemo.ljclass);
 //    public MyAspectJDemo() {
 //        log.info("create MyAspectJDemo instance");
 //    }

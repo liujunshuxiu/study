@@ -40,12 +40,12 @@ public class CGLibProxy implements MethodInterceptor {
     public static void main(String[] args) throws IllegalAccessException, NoSuchFieldException, InstantiationException {
         CGLibProxy cgLibProxy = new CGLibProxy();
         //cglib代理类
-//        CglibDemo proxy = (CglibDemo)cgLibProxy.createProxy(CglibDemo.class);
-//        UnSafeDemo proxy = (UnSafeDemo)cgLibProxy.createProxy(UnSafeDemo.class);
+//        CglibDemo proxy = (CglibDemo)cgLibProxy.createProxy(CglibDemo.ljclass);
+//        UnSafeDemo proxy = (UnSafeDemo)cgLibProxy.createProxy(UnSafeDemo.ljclass);
 //        proxy.execute();
 
 //        //cglib代理接口(有问题)
-//        ExInterface exProxy = (ExInterface)cgLibProxy.createProxy(ExInterface.class);
+//        ExInterface exProxy = (ExInterface)cgLibProxy.createProxy(ExInterface.ljclass);
 //        exProxy.execute();
 
         System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "C:/Users/admin-lj/Desktop/code");

@@ -22,7 +22,7 @@ class Counter extends Thread {
 
 //    private volatile long counter = 0;
 //
-//    static AtomicLongFieldUpdater updater = AtomicLongFieldUpdater.newUpdater(Counter.class, "counter");
+//    static AtomicLongFieldUpdater updater = AtomicLongFieldUpdater.newUpdater(Counter.ljclass, "counter");
 //    static Counter safeCounter = new Counter ();
 //
 //    public static long addOne() {

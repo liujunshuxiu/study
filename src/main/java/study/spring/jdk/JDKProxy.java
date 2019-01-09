@@ -63,7 +63,7 @@ public class JDKProxy implements InvocationHandler {
         // 这里我们将jdk生成的代理类输出了出来，方便后面分析使用
         byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy0",new Class[]{ex.getClass()});
 
-        FileOutputStream os = new FileOutputStream("C:/Users/admin-lj/Desktop/Proxy0.class");
+        FileOutputStream os = new FileOutputStream("C:/Users/admin-lj/Desktop/Proxy0.ljclass");
         os.write(bytes);
         os.close();
 
