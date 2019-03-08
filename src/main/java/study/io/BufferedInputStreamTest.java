@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class BufferedInputStreamTest {
 
-    static String fileName = "C:/临时/IOTest.txt";
+    static String fileName = "D:/临时/IOTest.txt";
 
     public static void main(String[] args){
         test();

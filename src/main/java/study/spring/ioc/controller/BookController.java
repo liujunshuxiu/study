@@ -3,6 +3,7 @@ package study.spring.ioc.controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import study.MapStudyKey;
 import study.spring.ioc.service.bean.PrototypeBean;
 import study.spring.ioc.service.bean.RequestBean;
 import study.spring.ioc.service.bean.SessionBean;
@@ -10,6 +11,9 @@ import study.spring.ioc.service.bean.SingletonBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * 作用域测试
@@ -27,6 +31,7 @@ public class BookController {
     @Autowired
     private SingletonBean singletonBean;
 
+    public static List<MapStudyKey> ljJP = new LinkedList<>();
 
     @RequestMapping(value = "/test")
     public void test()
@@ -48,6 +53,14 @@ public class BookController {
         System.out.println("second time sessionBean is :" + sessionBean);
 
         System.out.println("===========================================");
+
+        for(int i = 0 ; i < 20000 ; i++){
+            MapStudyKey jp = new MapStudyKey();
+            ljJP.add(jp);
+        }
+
+
+        System.out.println("==================ljJP.size="+ljJP.size()+"=========================");
     }
 
 

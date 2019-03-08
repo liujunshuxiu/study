@@ -17,7 +17,7 @@ public class LJIOTest {
 
 
     /**
-     * 以行为单位读取文件，常用于读面向行的格式化文件
+     * 以行为单位读取文件，常用于读面向行的格式化文件InputStream
      */
     public static void readFileByLines(String fileName) {
         BufferedReader reader = null;

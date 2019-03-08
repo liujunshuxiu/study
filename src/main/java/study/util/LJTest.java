@@ -64,20 +64,20 @@ public class LJTest {
 ////        testMap.get(1);
 //
 //
-//        Map<String,String> hashMapStudy = new HashMap<>();
+        Map<String,String> hashMapStudy = new HashMap<>();
 //        for(int i = 0;i<100;i++ ){
 //            if(i == 15){
 //                System.out.println(i);
 //            }
 //            hashMapStudy.put(""+i,""+i);
 //        }
-//        hashMapStudy.put("1","a");
-//        hashMapStudy.put("1","aLJ");
-//        hashMapStudy.put("2","b");
-//        hashMapStudy.put("3","c");
-//        hashMapStudy.put("4","d");
-//
-//        hashMapStudy.get("3");
+        hashMapStudy.put("1","a");
+        hashMapStudy.put("1","aLJ");
+        hashMapStudy.put("2","b");
+        hashMapStudy.put("3","c");
+        hashMapStudy.put("4","d");
+
+        hashMapStudy.get("3");
 //
 //        Set<Map.Entry<String, String>> entries = hashMapStudy.entrySet();
 //        System.out.println(hashMapStudy);
@@ -89,20 +89,20 @@ public class LJTest {
 //        }
 //        hashStringMapStudy.put("1",testAddList);
 
-        Map<String,String> linkHashMap = new LinkedHashMap<>();
-        linkHashMap.put("1","a");
-        linkHashMap.put("1","aLJ");
-        linkHashMap.put("2","b");
-        linkHashMap.put("3","c");
-        linkHashMap.put("4","d");
-
-
-//        Map<String,String> linkHashMap = new TreeMap<>();
+//        Map<String,String> linkHashMap = new LinkedHashMap<>();
 //        linkHashMap.put("1","a");
 //        linkHashMap.put("1","aLJ");
 //        linkHashMap.put("2","b");
 //        linkHashMap.put("3","c");
 //        linkHashMap.put("4","d");
+
+
+//        Map<String,String> treeMap = new TreeMap<>();
+//        treeMap.put("1","a");
+//        treeMap.put("1","aLJ");
+//        treeMap.put("2","b");
+//        treeMap.put("3","c");
+//        treeMap.put("4","d");
 
 
 //        Set<String> hashSet = new HashSet<>();
@@ -111,7 +111,7 @@ public class LJTest {
 //        hashSet.add("c");
 //        hashSet.add("d");
 //        hashSet.add("e");
-
+//
 //        Set<String>  treeSet = new TreeSet<>();
 //        treeSet.add("a");
 //        treeSet.add("b");

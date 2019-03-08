@@ -25,7 +25,7 @@ public class ThreadPoolStudy {
             }
         };
 
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(6, 10, 5, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10, 5, TimeUnit.SECONDS, new SynchronousQueue<Runnable>());
 
 
         executor.execute(myRunnable);

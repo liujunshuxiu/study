@@ -18,7 +18,7 @@ public class MapStudyKey {
     @Override
     public int hashCode() {
         int a = 1;
-        if(value == 1 || value == 2){
+        if(value < 20){
             return a;
         }else{
             return value;
