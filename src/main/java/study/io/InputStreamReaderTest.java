@@ -2,7 +2,7 @@ package study.io;
 
 import java.io.*;
 
-public class LJIOTest {
+public class InputStreamReaderTest {
 
     private static String UTF8URL = "C:/临时/CCTV1（高清）.txt";
 //    private static String GBKURL = "C:/临时/CCTV-2财经.txt";
