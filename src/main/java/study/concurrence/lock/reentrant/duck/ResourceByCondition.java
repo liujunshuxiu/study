@@ -28,9 +28,9 @@ public class ResourceByCondition {
             while(flag){
                 try{producer_con.await();}catch(InterruptedException e){}
             }
-            this.name = name + count;
             count++;
-            System.out.println(Thread.currentThread().getName()+"...生产者5.0..."+this.name);
+            this.name = name + count;
+            System.out.println(Thread.currentThread().getName()+"...生产者..count."+count);
             flag = true;
             consumer_con.signal();//直接唤醒消费线程
         }
@@ -51,7 +51,8 @@ public class ResourceByCondition {
             while(!flag){
                 try{consumer_con.await();}catch(InterruptedException e){}
             }
-            System.out.println(Thread.currentThread().getName()+"...消费者.5.0......."+this.name);//消费烤鸭1
+            count--;
+            System.out.println(Thread.currentThread().getName()+"...消费者.....count."+count);//消费烤鸭1
             flag = false;
             producer_con.signal();//直接唤醒生产线程
         }
