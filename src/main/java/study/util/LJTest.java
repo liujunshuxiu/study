@@ -8,11 +8,11 @@ public class LJTest {
 //        ApplicationContext context = new FileSystemXmlApplicationContext("applicationContext.xml");
 
         //------------------------ArrayList-----------------------------
-//        List<Integer> testList = new ArrayList<Integer>();
-//        testList.add(1);
-////        testList.add(null);
-//        testList.add(1);
-//        testList.add(2);
+        List<Integer> testList = new ArrayList<Integer>();
+        testList.add(1);
+//        testList.add(null);
+        testList.add(1);
+        testList.add(2);
 //
 //
 //        List<Integer> testAddList = new ArrayList<Integer>();
@@ -22,14 +22,19 @@ public class LJTest {
 //
 //        testList.addAll(testAddList);
 //
-//        Iterator<Integer> iterator = testList.iterator();
-//        System.out.println("--------------------分割1--------------------");
-//
-//        while (iterator.hasNext()){
-//            int next = iterator.next();
-//            System.out.println("iterator当前元素："+next);
-//        }
-//
+
+        for(Iterator<Integer> iterator1 = testList.iterator();iterator1.hasNext();){
+            Integer next = iterator1.next();
+        }
+        
+        Iterator<Integer> iterator = testList.iterator();
+        System.out.println("--------------------分割1--------------------");
+
+        while (iterator.hasNext()){
+            int next = iterator.next();
+            System.out.println("iterator当前元素："+next);
+        }
+
 //        ListIterator<Integer> integerListIterator = testList.listIterator();
 //        while (integerListIterator.hasPrevious()){
 //            int next = integerListIterator.previous();
