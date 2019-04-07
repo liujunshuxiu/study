@@ -58,18 +58,30 @@ public class MergeSort {
 
     public static void main(String[] args){
 
-        System.out.print("归并排序（Merge Sort）原array:");
-        for(int i : array){
-            System.out.print(i+",");
-        }
+//        System.out.print("归并排序（Merge Sort）原array:");
+//        for(int i : array){
+//            System.out.print(i+",");
+//        }
+//
+//        System.out.println();
+//
+//        array = MergeSort(array);
+//
+//        System.out.print("归并排序（Merge Sort）后array:");
+//        for(int i : array){
+//            System.out.print(i+",");
+//        }
 
-        System.out.println();
 
-        array = MergeSort(array);
 
+        int[] array1 = {1,7,8,11,39,72};
+        int[] array2 = {3,5,7,19};
+
+        int[] merge = merge(array1, array2);
         System.out.print("归并排序（Merge Sort）后array:");
-        for(int i : array){
+        for(int i : merge){
             System.out.print(i+",");
         }
+
     }
 }
