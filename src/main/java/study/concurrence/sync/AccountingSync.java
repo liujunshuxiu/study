@@ -13,6 +13,14 @@ public class AccountingSync implements Runnable {
         i++;
     }
 
+    /**
+     * static方法
+     * synchronized作用于静态方法时，其锁就是当前类的class对象锁
+     */
+//    public static synchronized void increase(){
+//        i++;
+//    }
+
     @Override
     public void run() {
         for(int j=0;j<1000000;j++){
