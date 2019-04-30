@@ -9,17 +9,17 @@ public class AccountingSync implements Runnable {
      * synchronized 修饰实例方法
      * 线程的锁便是实例对象instance
      */
-    public synchronized void increase(){
-        i++;
-    }
+//    public synchronized void increase(){
+//        i++;
+//    }
 
     /**
      * static方法
      * synchronized作用于静态方法时，其锁就是当前类的class对象锁
      */
-//    public static synchronized void increase(){
-//        i++;
-//    }
+    public static synchronized void increase(){
+        i++;
+    }
 
     @Override
     public void run() {
