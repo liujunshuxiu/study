@@ -79,10 +79,52 @@ public class mainTest {
 //                System.out.println(i);
 //            }
 
-        int i = 10 ;
-        System.out.println("i/2="+i/2 );
-        i = 10 >>1;
-        System.out.println("i>>1="+ i);
+//        int i = 10 ;
+//        System.out.println("i/2="+i/2 );
+//        i = 10 >>1;
+//        System.out.println("i>>1="+ i);
+        
+//        String str1 = "lj";
+//        String str2 = "lj";
+//        System.out.println(str1 == str2);
+
+
+//        String str1 = new String("lj");
+//        String str2 = new String("lj");
+//        System.out.println(str1 == str2);
+
+
+        int a = 1;
+        int b = 5;
+
+        int c = b > a ? b -a : a;
+
+        System.out.println(c);
+
+//        Map<String,Integer> companyInNumMap = new HashMap<>();
+//        Integer num = null;
+//        int x = 1;
+//        companyInNumMap.put("test1",x);
+//
+//        if ((num = companyInNumMap.get("test")) == null) {
+//            companyInNumMap.put("test", new Integer(1));
+//        } else {
+////            companyInNumMap.get("test") + 1;
+////            Integer.sum(num,1) ;
+//
+//            num ++;
+//        }
+//        if ((num = companyInNumMap.get("test")) == null) {
+//            companyInNumMap.put("test", new Integer(1));
+//        } else {
+////            companyInNumMap.get("test") + 1;
+////            Integer.sum(num,1) ;
+////            companyInNumMap.put("test", ++ num );
+//            ++ num  ;
+//        }
+//        System.out.println(companyInNumMap);
+//        ++x;
+//        System.out.println(companyInNumMap);
     }
 
 
