@@ -12,7 +12,13 @@ public class CalculatorHandlerOld implements InvocationHandler {
         this.obj = obj;
     }
 
+    public CalculatorHandlerOld(){
+    }
 
+    private Object proxyBind(Object obj){
+        this.obj = obj;
+        return Proxy.newProxyInstance(obj.getClass().getClassLoader(),obj.getClass().getInterfaces(),this);
+    }
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
@@ -26,9 +32,11 @@ public class CalculatorHandlerOld implements InvocationHandler {
 
 
     public static void main(String[] args){
-        Calculator calculatorImpl = new CalculatorImpl();
-        CalculatorHandlerOld calculatorHandler = new CalculatorHandlerOld(calculatorImpl);
-        Calculator calculator = (Calculator)Proxy.newProxyInstance(calculatorImpl.getClass().getClassLoader(),calculatorImpl.getClass().getInterfaces(),calculatorHandler);
+//        Calculator calculatorImpl = new CalculatorImpl();
+//        CalculatorHandlerOld calculatorHandler = new CalculatorHandlerOld(calculatorImpl);
+//        Calculator calculator = (Calculator)Proxy.newProxyInstance(calculatorImpl.getClass().getClassLoader(),calculatorImpl.getClass().getInterfaces(),calculatorHandler);
+
+        Calculator calculator = (Calculator)new CalculatorHandlerOld().proxyBind(new CalculatorImpl());
         System.out.println(calculator.add(1,2));
         System.out.println(calculator.minus(1, 2));
     }
