@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "bookController")
+@RequestMapping(value = "dailyController")
 public class DailyController {
 
     static class TestObject{}
