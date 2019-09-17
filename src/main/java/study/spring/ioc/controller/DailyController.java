@@ -10,17 +10,23 @@ import java.util.List;
 @RequestMapping(value = "dailyController")
 public class DailyController {
 
-    static class TestObject{}
+    static List<TestObject> list = new ArrayList<TestObject>();
+
+    static final Object obj = new Object();
+
+    static class TestObject {
+        static final Object testObj = obj;
+    }
 
     @RequestMapping(value = "/dead")
-    public void dead()
-    {
+    public void dead() {
         System.out.println("进入dead");
-        List<TestObject> list=new ArrayList<TestObject>();
         int i = 0;
-        while(1 < 100000){
+
+        while (i++ < 100000) {
             list.add(new TestObject());
         }
 
+        System.out.println("出入dead");
     }
 }
