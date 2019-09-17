@@ -15,8 +15,10 @@ public class DailyController {
     @RequestMapping(value = "/dead")
     public void dead()
     {
+        System.out.println("进入dead");
         List<TestObject> list=new ArrayList<TestObject>();
-        while(true){
+        int i = 0;
+        while(1 < 100000){
             list.add(new TestObject());
         }
 
