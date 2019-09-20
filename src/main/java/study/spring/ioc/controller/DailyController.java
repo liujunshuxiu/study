@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping(value = "dailyController")
 public class DailyController {
 
-    static List<TestObject> list = new ArrayList<TestObject>();
+//    static List<TestObject> list = new ArrayList<TestObject>();
 
     static final Object obj = new Object();
 
@@ -20,6 +20,7 @@ public class DailyController {
 
     @RequestMapping(value = "/dead")
     public void dead() {
+        List<TestObject> list = new ArrayList<TestObject>();
         System.out.println("进入dead");
         int i = 0;
 
