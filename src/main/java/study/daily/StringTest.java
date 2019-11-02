@@ -6,5 +6,6 @@ public class StringTest {
         System.out.println(str.length());
 
         System.out.println(String.format("该项目已存在相同人员，projectId为：%s身份证号为：%s","xcgd","gdfgd"));
+
     }
 }
