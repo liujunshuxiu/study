@@ -96,12 +96,12 @@ public class LJTest {
 //        }
 //        hashStringMapStudy.put("1",testAddList);
 
-//        Map<String,String> linkHashMap = new LinkedHashMap<>();
-//        linkHashMap.put("1","a");
-//        linkHashMap.put("1","aLJ");
-//        linkHashMap.put("2","b");
-//        linkHashMap.put("3","c");
-//        linkHashMap.put("4","d");
+        Map<String,String> linkHashMap = new LinkedHashMap<>();
+        linkHashMap.put("1","a");
+        linkHashMap.put("1","aLJ");
+        linkHashMap.put("2","b");
+        linkHashMap.put("3","c");
+        linkHashMap.put("4","d");
 
 
 //        Map<String,String> treeMap = new TreeMap<>();
