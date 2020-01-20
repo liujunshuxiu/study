@@ -1,6 +1,7 @@
 package study.daily;
 
 import org.springframework.beans.BeanUtils;
+import study.mode.example.Movie;
 
 public class DataCopyTest {
 
@@ -128,8 +129,12 @@ public class DataCopyTest {
 
     public static void main(String[] args){
         Student student = new Student(1, "张三", 90,"测试");
-        StudentCopy copy = new StudentCopy();
-        BeanUtils.copyProperties(student,copy);
-        System.out.println(copy.toString());
+//        StudentCopy copy = new StudentCopy();
+//        BeanUtils.copyProperties(student,copy);
+//        System.out.println(copy.toString());
+
+
+        Movie movie = (Movie)null;
+        System.out.println(movie);
     }
 }
