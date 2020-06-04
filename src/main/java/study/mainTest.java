@@ -1,9 +1,10 @@
 package study;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.SimpleDateFormat;
-import java.util.*;
+import com.google.i18n.phonenumbers.NumberParseException;
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.Phonenumber;
+
+import java.util.List;
 
 public class mainTest {
 
@@ -35,7 +36,72 @@ public class mainTest {
         }
     }
 
+    public static String parsePassword(String papssword) {
+        return isCorrectPassword(papssword) ? papssword : "dc483e80a7a0bd9ef71d8cf973673924";
+    }
+
+    public static boolean isCorrectPassword(String papssword) {
+        if (papssword == null) {
+            return false;
+        }
+        return papssword.length() >= 6 && papssword.length() < 64;
+    }
+
+    private final static String regexRealName = "^[0-9a-zA-Z\\x{4e00}-\\x{9fa5}& ._（）(),-]{1,32}$";
+
     public static void main(String[] args){
+//        String str = "afdd0b4ad2ec172c586e2150770fbf9e";
+//        System.out.println(parsePassword(str));
+//
+//        String str2= "哒哒会员_qMvJ5y";
+//        System.out.println(str2.matches(regexRealName));
+
+//        PhoneNumberOfflineGeocoder geocoder = PhoneNumberOfflineGeocoder.getInstance();
+//        PhoneNumberToCarrierMapper carrierMapper = PhoneNumberToCarrierMapper.getInstance();
+
+        String swissNumberStr = "+9647518094704";
+        PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
+
+        Phonenumber.PhoneNumber swissNumberProto = null;
+        try {
+            swissNumberProto = phoneUtil.parse(swissNumberStr, null);
+            System.out.println(swissNumberProto);
+        } catch (NumberParseException e) {
+            System.err.println("NumberParseException was thrown: " + e.toString());
+        }
+
+
+//        String carrierZh = "";
+//        carrierZh += geocoder.getDescriptionForNumber(swissNumberProto, Locale.CHINESE);
+//
+//        System.out.println("carrierZh:"+ carrierZh);
+//
+//        String carrierEn = carrierMapper.getNameForNumber(swissNumberProto, Locale.ENGLISH);
+//        System.out.println("carrierEn:"+ carrierEn);
+
+//        String str = "军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军";
+//        String str1 = "jun.liu";
+//
+//        String regex = "^[0-9a-zA-Z\\x{3400}-\\x{4db5}\\x{4e00}-\\x{9fa5}& ，.（）(),-_]{1,32}$";
+//        String regex1 = "^[a-z ._A-Z-]{1,32}$";
+//        System.out.println(str.length());
+//        System.out.println(str.matches(regex));
+//        System.out.println(str1.matches(regex1));
+
+
+//        String str = "+099118690333121";
+//        System.out.println(str.substring(1,str.length()-11));
+//        System.out.println(str.substring(str.length()-11));
+
+
+//        String str = "Uid 4575 has existed!";
+//        System.out.println(str.contains("has existed"));
+//
+//        List<Integer> list = new LinkedList<>();
+//        list.add(537);
+//        list.add(23);
+//        System.out.println(StringUtils.join(list, ","));
+
 //        int a = 0;
 //        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3));
 //        deal(a,list);
@@ -94,12 +160,12 @@ public class mainTest {
 //        System.out.println(str1 == str2);
 
 
-        int a = 1;
-        int b = 5;
-
-        int c = b > a ? b -a : a;
-
-        System.out.println(c);
+//        int a = 1;
+//        int b = 5;
+//
+//        int c = b > a ? b -a : a;
+//
+//        System.out.println(c);
 
 //        Map<String,Integer> companyInNumMap = new HashMap<>();
 //        Integer num = null;
