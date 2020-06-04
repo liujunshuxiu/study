@@ -61,13 +61,13 @@ public class MD5Test {
     }
 
     public static void main(String[] args) {
-//        String getmd5 = getMD5("hfykcs"+"hfykcs"+"2019-11-18");
-//        System.out.println(getmd5);
+        String getmd5 = getMD5("a123456");
+        System.out.println(getmd5);
 
-        long timestamp = System.currentTimeMillis() / 1000;
-        System.out.println("timestamp:"+timestamp);
-        StringBuilder sb = new StringBuilder();
-        sb.append("7110001").append(timestamp).append("a1466c4bef946511b8501e9f046701a8");
-        System.out.println("Sign:"+getMD5(sb.toString()));
+//        long timestamp = System.currentTimeMillis() / 1000;
+//        System.out.println("timestamp:"+timestamp);
+//        StringBuilder sb = new StringBuilder();
+//        sb.append("7110001").append(timestamp).append("a1466c4bef946511b8501e9f046701a8");
+//        System.out.println("Sign:"+getMD5(sb.toString()));
     }
 }

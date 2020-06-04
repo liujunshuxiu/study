@@ -44,6 +44,28 @@ public class DailyCourse1 {
         }
     }
 
+    private static class Course1Counter {
+        private int single = 0;
+
+        private Map<String,Integer> students = new HashMap<>( (int) Math.ceil(50 / 0.75f));
+
+        public int getSingle() {
+            return single;
+        }
+
+        public void setSingle(int single) {
+            this.single = single;
+        }
+
+        public Map<String, Integer> getStudents() {
+            return students;
+        }
+
+        public void setStudents(Map<String, Integer> students) {
+            this.students = students;
+        }
+    }
+
     public static void main(String[] args) {
         Parent p1 = new Parent("f1","c1","f");
         Parent p2 = new Parent("f2","c1","f");
@@ -98,25 +120,5 @@ public class DailyCourse1 {
     }
 
 
-    private static class Course1Counter {
-        private int single = 0;
 
-        private Map<String,Integer> students = new HashMap<>( (int) Math.ceil(50 / 0.75f));
-
-        public int getSingle() {
-            return single;
-        }
-
-        public void setSingle(int single) {
-            this.single = single;
-        }
-
-        public Map<String, Integer> getStudents() {
-            return students;
-        }
-
-        public void setStudents(Map<String, Integer> students) {
-            this.students = students;
-        }
-    }
 }
