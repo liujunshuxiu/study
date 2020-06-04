@@ -37,5 +37,8 @@ public class JsonTest {
 
         System.out.println("weight:"+weight);
         System.out.println("height:"+height);
+
+        String s = "系统异常!!";
+        JSONObject.parseObject(s);
     }
 }

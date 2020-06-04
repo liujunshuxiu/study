@@ -13,6 +13,10 @@ public class InvocationInfoProxy {
     };
 
 
+    public InvocationInfoProxy(){
+
+    }
+
     public static void reset() {
         threadLocal.remove();
     }
