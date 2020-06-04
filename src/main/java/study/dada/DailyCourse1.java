@@ -96,7 +96,7 @@ public class DailyCourse1 {
 
         System.out.println("plane1:"+count);
 
-        //方案二 空间n，时间复杂度1
+        //方案二 空间n，时间复杂度n
         Set<String> child = new HashSet();
         parents.forEach(parent -> {
             if(!child.contains(parent.getChildName())){
