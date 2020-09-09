@@ -4,7 +4,10 @@ import com.google.i18n.phonenumbers.NumberParseException;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;
 import com.google.i18n.phonenumbers.Phonenumber;
 
+import java.math.BigDecimal;
 import java.util.List;
+
+import static javafx.scene.input.KeyCode.L;
 
 public class mainTest {
 
@@ -50,6 +53,12 @@ public class mainTest {
     private final static String regexRealName = "^[0-9a-zA-Z\\x{4e00}-\\x{9fa5}& ._（）(),-]{1,32}$";
 
     public static void main(String[] args){
+        BigDecimal setting = new BigDecimal("0.2").multiply(new BigDecimal(100));
+        BigDecimal amount = new BigDecimal(String.valueOf(20L));
+
+        System.out.println(setting);
+        System.out.println(amount);
+        System.out.println(amount.compareTo(setting));
 //        String str = "afdd0b4ad2ec172c586e2150770fbf9e";
 //        System.out.println(parsePassword(str));
 //
@@ -59,16 +68,16 @@ public class mainTest {
 //        PhoneNumberOfflineGeocoder geocoder = PhoneNumberOfflineGeocoder.getInstance();
 //        PhoneNumberToCarrierMapper carrierMapper = PhoneNumberToCarrierMapper.getInstance();
 
-        String swissNumberStr = "+9647518094704";
-        PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
-
-        Phonenumber.PhoneNumber swissNumberProto = null;
-        try {
-            swissNumberProto = phoneUtil.parse(swissNumberStr, null);
-            System.out.println(swissNumberProto);
-        } catch (NumberParseException e) {
-            System.err.println("NumberParseException was thrown: " + e.toString());
-        }
+//        String swissNumberStr = "+9647518094704";
+//        PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
+//
+//        Phonenumber.PhoneNumber swissNumberProto = null;
+//        try {
+//            swissNumberProto = phoneUtil.parse(swissNumberStr, null);
+//            System.out.println(swissNumberProto);
+//        } catch (NumberParseException e) {
+//            System.err.println("NumberParseException was thrown: " + e.toString());
+//        }
 
 
 //        String carrierZh = "";

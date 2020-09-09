@@ -1,4 +1,4 @@
-package study.concurrence.product;
+package study.concurrence.product.error;
 
 public class Consumer extends Thread{
     private int neednum;//消费产品的数量

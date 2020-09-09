@@ -1,5 +1,7 @@
 package study.daily;
 
+import java.math.BigDecimal;
+
 public class IntTest {
 
     public static class ListNode {
@@ -39,6 +41,12 @@ public class IntTest {
     }
     
     public static void main(String[] args) {
+
+        System.out.println(new BigDecimal(0.1).compareTo(new BigDecimal(0.2)));
+
+        int ansRate = (int) ((float) 2 / 3 * 100);
+        System.out.println(ansRate);
+        
         System.out.println(12 / 10);
 
         long a = 9999999999L;

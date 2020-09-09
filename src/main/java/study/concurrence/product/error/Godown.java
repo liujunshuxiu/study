@@ -1,7 +1,7 @@
-package study.concurrence.product;
+package study.concurrence.product.error;
 
 public class Godown {
-    public static final int max_size=100;//最大库存量
+    public static final int max_size=10000;//最大库存量
     public int curnum;//当前库存量
     Godown() {
     }

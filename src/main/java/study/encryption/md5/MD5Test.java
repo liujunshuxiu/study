@@ -61,7 +61,7 @@ public class MD5Test {
     }
 
     public static void main(String[] args) {
-        String getmd5 = getMD5("a123456");
+        String getmd5 = getMD5("qwe123");
         System.out.println(getmd5);
 
 //        long timestamp = System.currentTimeMillis() / 1000;

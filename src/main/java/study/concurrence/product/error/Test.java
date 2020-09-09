@@ -1,4 +1,4 @@
-package study.concurrence.product;
+package study.concurrence.product.error;
 
 /**
  * 生产者消费者模型
@@ -18,9 +18,7 @@ public class Test {
         Producer p5=new Producer(10,godown);
         Producer p6=new Producer(10,godown);
         Producer p7=new Producer(80,godown);
-        c1.start();
-        c2.start();
-        c3.start();
+
         p1.start();
         p2.start();
         p3.start();
@@ -28,5 +26,9 @@ public class Test {
         p5.start();
         p6.start();
         p7.start();
+
+        c1.start();
+        c2.start();
+        c3.start();
     }
 }

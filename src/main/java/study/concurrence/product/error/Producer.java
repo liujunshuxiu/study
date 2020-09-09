@@ -1,4 +1,4 @@
-package study.concurrence.product;
+package study.concurrence.product.error;
 
 public class Producer extends Thread {
     private int neednum;//生产产品的数量

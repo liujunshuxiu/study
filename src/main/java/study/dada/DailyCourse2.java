@@ -45,7 +45,14 @@ public class DailyCourse2 {
     }
 
     public static void main(String[] args) {
-        int[] res = new int[]{5,4,3,2,1};
-        moveRes(4,1,res);
+//        int ansRate = (int) ((float) 2 / 4 * 100);
+//        System.out.println(ansRate);
+//        int[] res = new int[]{5,4,3,2,1};
+//        moveRes(4,1,res);
+
+//        System.out.println(1572055581 - 1571133833);
+
+        System.out.println(1590636201 - 1590632777);
+
     }
 }

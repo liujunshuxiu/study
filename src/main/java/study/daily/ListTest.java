@@ -1,12 +1,5 @@
 package study.daily;
 
-import com.alibaba.fastjson.JSONArray;
-import study.anno.Member;
-import study.concurrence.product.Consumer;
-
-import java.util.Collections;
-import java.util.List;
-
 public class ListTest {
 
     public static void main(String[] args) {

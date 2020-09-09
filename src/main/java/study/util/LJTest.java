@@ -1,6 +1,7 @@
 package study.util;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class LJTest {
 
@@ -9,31 +10,56 @@ public class LJTest {
 
         //------------------------ArrayList-----------------------------
         List<Integer> testList = new ArrayList<Integer>();
-        testList.add(1);
+//        testList.add(1);
 //        testList.add(null);
-        testList.add(1);
-        testList.add(2);
+//        testList.add(2);
+//        testList.add(3);
+
 //
 //
-//        List<Integer> testAddList = new ArrayList<Integer>();
-//        for(int i = 0;i<100;i++ ){
-//            testAddList.add(i);
+        List<Integer> testAddList = new ArrayList<Integer>();
+        for(int i = 0;i<10;i++ ){
+            testAddList.add(i);
+        }
+
+        for(int i = 0;i<10;i++ ){
+            if(i == 9){
+                testAddList.add(10,100);
+            }
+        }
+//        for(int i = 0;i<10;i++ ){
+//            if(i == 4){
+//                testAddList.remove(4);
+//            }
 //        }
+
 //
 //        testList.addAll(testAddList);
 //
+        List<Integer> collect = testAddList.stream().filter(m -> {
+            return m > 5;
+        }).collect(Collectors.toList());
 
-        for(Iterator<Integer> iterator1 = testList.iterator();iterator1.hasNext();){
-            Integer next = iterator1.next();
+        for(int i = 0 ;i< testAddList.size();i++){
+            System.out.println(testAddList.get(i));
         }
+
+        System.out.println(testAddList.subList(1,4));
+
+//        for(Iterator<Integer> iterator1 = testList.iterator();iterator1.hasNext();){
+//            Integer next = iterator1.next();
+//        }
         
-        Iterator<Integer> iterator = testList.iterator();
-        System.out.println("--------------------分割1--------------------");
-
-        while (iterator.hasNext()){
-            int next = iterator.next();
-            System.out.println("iterator当前元素："+next);
-        }
+//        Iterator<Integer> iterator = testList.iterator();
+//        System.out.println("--------------------分割1--------------------");
+//
+//        while (iterator.hasNext()){
+//            int next = iterator.next();
+//            System.out.println("iterator当前元素："+next);
+//            if(!iterator.hasNext()){
+//                System.out.println("iterator最后元素："+next);
+//            }
+//        }
 
 //        ListIterator<Integer> integerListIterator = testList.listIterator();
 //        while (integerListIterator.hasPrevious()){
@@ -71,20 +97,20 @@ public class LJTest {
 //
 
 
-        Map<String,String> hashMapStudy = new HashMap<>();
+//        Map<String,String> hashMapStudy = new HashMap<>();
 //        for(int i = 0;i<100;i++ ){
 //            if(i == 15){
 //                System.out.println(i);
 //            }
 //            hashMapStudy.put(""+i,""+i);
 //        }
-        hashMapStudy.put("1","a");
-        hashMapStudy.put("1","aLJ");
-        hashMapStudy.put("2","b");
-        hashMapStudy.put("3","c");
-        hashMapStudy.put("4","d");
-
-        hashMapStudy.get("3");
+//        hashMapStudy.put("1","a");
+//        hashMapStudy.put("1","aLJ");
+//        hashMapStudy.put("2","b");
+//        hashMapStudy.put("3","c");
+//        hashMapStudy.put("4","d");
+//
+//        hashMapStudy.get("3");
 //
 //        Set<Map.Entry<String, String>> entries = hashMapStudy.entrySet();
 //        System.out.println(hashMapStudy);
@@ -96,12 +122,12 @@ public class LJTest {
 //        }
 //        hashStringMapStudy.put("1",testAddList);
 
-        Map<String,String> linkHashMap = new LinkedHashMap<>();
-        linkHashMap.put("1","a");
-        linkHashMap.put("1","aLJ");
-        linkHashMap.put("2","b");
-        linkHashMap.put("3","c");
-        linkHashMap.put("4","d");
+//        Map<String,String> linkHashMap = new LinkedHashMap<>();
+//        linkHashMap.put("1","a");
+//        linkHashMap.put("1","aLJ");
+//        linkHashMap.put("2","b");
+//        linkHashMap.put("3","c");
+//        linkHashMap.put("4","d");
 
 
 //        Map<String,String> treeMap = new TreeMap<>();
