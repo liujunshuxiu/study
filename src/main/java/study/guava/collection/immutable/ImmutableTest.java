@@ -57,10 +57,10 @@ public class ImmutableTest {
         System.out.println("imlist："+imlist);
 
         ImmutableList<String> imOflist=ImmutableList.of("peida","jerry","harry");
-        System.out.println("imOflist："+imOflist);
+//        System.out.println("imOflist："+imOflist);
 
         ImmutableSortedSet<String> imSortList=ImmutableSortedSet.of("a", "b", "c", "a", "d", "b");
-        System.out.println("imSortList："+imSortList);
+//        System.out.println("imSortList："+imSortList);
 
         list.add("baby");
         System.out.println("list add a item after list:"+list);
