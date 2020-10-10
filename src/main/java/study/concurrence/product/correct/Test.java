@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Test {
 
+    private int a = 0;
+
     public static void main(String[] args) {
         // 仓库
         List<Object> container = new ArrayList<>();
@@ -22,4 +24,6 @@ public class Test {
         new Producer("老马", container).start();
 
     }
+
+
 }

@@ -30,7 +30,7 @@ public class ImmutableTest {
         System.out.println(unmodifiableList1);
 
         String temp=unmodifiableList.get(1);
-        System.out.println("unmodifiableList [0]："+temp);
+//        System.out.println("unmodifiableList [0]："+temp);
 
         list.add("baby");
         System.out.println("list add a item after list:"+list);
@@ -38,7 +38,7 @@ public class ImmutableTest {
 
         unmodifiableList1.add("bb");
         System.out.println("unmodifiableList add a item after list:"+unmodifiableList1);
-
+ 
         unmodifiableList.add("cc");
         System.out.println("unmodifiableList add a item after list:"+unmodifiableList);
     }
