@@ -94,10 +94,10 @@ public final class Base64Util {
 	}
 
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		String s = "abcdefg";
+		String s = "a123456";
 
 		String x = encode(s.getBytes());
-
+		System.out.println("x:"+x);
 		String x1 = new String(decode(x));
 	}
 }

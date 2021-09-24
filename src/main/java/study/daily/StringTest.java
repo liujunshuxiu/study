@@ -11,6 +11,15 @@ public class StringTest {
 //        String str = "";
 //        System.out.println(org.apache.commons.lang3.StringUtils.isBlank(str));
         
-        System.out.println(7 % 60);
+//        System.out.println(7 % 60);
+        System.out.println(getMinOfSecond(509));
+    }
+
+    private static String getMinOfSecond(Integer second) {
+        if (second == null || second == 0) {
+            return "--";
+        }
+        int v = second % 60;
+        return second / 60 + ":" + (v >= 10 ? v : ("0" + v));
     }
 }

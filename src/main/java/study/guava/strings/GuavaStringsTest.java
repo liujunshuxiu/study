@@ -21,6 +21,10 @@ public class GuavaStringsTest {
 
     @Test
     public void testJoiner(){
+        String join = Joiner.on(",")
+                .skipNulls()
+                .join(Arrays.asList(1, 2, 3, 4, 5, null, 6));
+
         System.out.println(Joiner.on(",")
                 .skipNulls()
                 .join(Arrays.asList(1,2,3,4,5,null,6)));
