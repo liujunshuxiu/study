@@ -19,6 +19,7 @@ public class MapStudyKey {
     public int hashCode() {
         int a = 1;
         if(value < 60){
+        //kghgf Ì«ºþ
             return a;
         }else{
             return value;
