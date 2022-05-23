@@ -15,6 +15,7 @@ public class BIOServer {
         server();
     }
     public static void server(){
+//        Socket socket = new Socket();// 使用TCP协议
         ServerSocket serverSocket = null;
         InputStream in = null;
         try

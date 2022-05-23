@@ -1,5 +1,7 @@
 package study.daily;
 
+import org.junit.Before;
+import org.junit.Test;
 import study.dada.DailyCourse1;
 
 import java.util.*;
@@ -8,9 +10,42 @@ public class StackTest {
 
     public static final String appName;
 
+    // 定义一个队列
+    Queue<String> queue;
+
+
     static {
         appName = "sdf";
     }
+
+    @Before
+    public void before() {
+    // 实例化队列变量
+        queue = new LinkedList<String>();
+
+        // add方法向队列中添加元素,返回布尔值，add方法添加失败时会抛异常,不推荐使用
+        // queue.add("1");
+        // queue.add("2");
+        // queue.add("3");
+        // queue.add("4");
+        // queue.add("5");
+
+        // offer方法向队列中添加元素，返回布尔值
+        queue.offer("a");
+        queue.offer("b");
+        queue.offer("c");
+        queue.offer("d");
+        queue.offer("e");
+    }
+
+    @Test
+    public void test1() {
+// 弹出元素
+        String pollEle = queue.poll(); // 先进先出,弹出了aha sh
+        System.out.println(pollEle); // a
+        System.out.println(queue); // [b, c, d, e]
+    }
+
 
     public static void main(String[] args) {
 //        Stack<Object> stack = null;

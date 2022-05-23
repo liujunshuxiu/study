@@ -12,6 +12,8 @@ public class DailyCourse1 {
         private String childName; //孩子名字
         private String fatherOrMother; //家长是父亲还是母亲
 
+        private Parent chlid;
+
         public Parent(String parentName, String childName, String fatherOrMother) {
             this.parentName = parentName;
             this.childName = childName;

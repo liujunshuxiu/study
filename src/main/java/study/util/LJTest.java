@@ -145,12 +145,16 @@ public class LJTest {
 //        hashSet.add("d");
 //        hashSet.add("e");
 //
-//        Set<String>  treeSet = new TreeSet<>();
-//        treeSet.add("a");
-//        treeSet.add("b");
-//        treeSet.add("c");
-//        treeSet.add("d");
-//        treeSet.add("e");
+        Set<String>  treeSet = new TreeSet<>();
+        treeSet.add("a");
+        treeSet.add("b");
+        treeSet.add("c");
+        treeSet.add("d");
+        treeSet.add("e");
 
+        String s = "5";
+        int num = 5;
+        String str = Integer.toBinaryString(num);
+        System.out.println(str);
     }
 }

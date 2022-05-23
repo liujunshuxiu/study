@@ -7,7 +7,7 @@ import java.nio.channels.FileChannel;
 
 public class FileNIOTest {
 
-    private static final String FileName = "D:/临时/fileStream.txt";
+    private static final String FileName = "/Users/jun/Documents/个人/工作/个人简历-未完成.txt";
 
     public static void main(String[] args){
         method1();

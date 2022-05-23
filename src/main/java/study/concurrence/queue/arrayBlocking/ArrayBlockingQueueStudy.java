@@ -3,11 +3,13 @@ package study.concurrence.queue.arrayBlocking;
 import study.concurrence.condition.BoundedBuffer;
 
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class ArrayBlockingQueueStudy {
 
         public static void main(String[] args) {
-            ArrayBlockingQueue<String> bb = new ArrayBlockingQueue(10);
+//            ArrayBlockingQueue<String> bb = new ArrayBlockingQueue(10);
+            LinkedBlockingQueue<String> bb = new LinkedBlockingQueue(10);
 
             //新建写线程
             for (int i = 0; i < 60; i++) {
