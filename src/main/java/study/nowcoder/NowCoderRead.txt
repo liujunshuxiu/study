@@ -1,0 +1,121 @@
+//读取单行输入
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        System.out.println(num);
+    }
+}
+
+
+//读取多行输入
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        while (sc.hasNextLine()) {
+            String str = sc.nextLine();
+
+        }
+    }
+
+
+
+//处理数字
+import java.io.*;
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) throws Exception{
+        Scanner sc = new Scanner(System.in);
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+       while(sc.hasNextInt()){
+            int n = sc.nextInt();
+            for(int i = 0; i < n; ++i){
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                map.put(a,map.getOrDefault(a,0) + b);
+            }
+       }
+       for (Integer i : map.keySet()) {
+           System.out.println(i + " " + map.get(i));
+       }
+    }
+}
+
+//处理char
+HashSet<Character> hs=new HashSet<Character>();
+        for(int i=0;i<str.length();i++)
+            hs.add(str.charAt(i));
+
+
+//bitset
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        String str=in.next();
+
+        BitSet bitSet = new BitSet(128);
+        for(char c : str.toCharArray()){
+            bitSet.set(c);
+        }
+
+        System.out.println(bitSet.cardinality());
+    }
+}
+
+
+
+//处理多行数字6 cab ad abcd cba abc bca abc 1
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args){
+    Scanner in = new Scanner(System.in);
+    while(in.hasNext()){
+        int num = in.nextInt();
+        List<String> datas = new ArrayList();
+        for(int i = 0 ; i < num ; i++){
+            datas.add(in.next());
+        }
+        String x = in.next();
+ }
+ }
+ }
+
+//排序
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class Main {
+       public static void main(String[] args) {
+        sortString();
+    }
+
+    private static void sortString() {
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNext()) {
+            int num = scanner.nextInt();
+            String[] stringArr = new String[num];
+            for (int i = 0; i < num; i++) {
+                String word = scanner.next();
+                stringArr[i] = word;
+            }
+            Arrays.sort(stringArr, (a, b) -> {
+                return (a).compareTo(b);
+            });
+
+                System.out.println(Arrays.stream(stringArr).collect(Collectors.joining(" ")));
+
+        }
+    }
+
+}

@@ -1,0 +1,78 @@
+
+//打印数组
+System.out.println(Arrays.stream(stringArr).collect(Collectors.joining(" ")));
+
+
+//转换int
+int n = Integer.valueOf(sc.nextLine());
+
+//转换大小写
+String str =sc.nextLine().toLowerCase();
+
+//字符串匹配
+ if(str.charAt(i) == ' '){}
+
+//字符串分割
+String s[]=str.split(" ");
+for(int i=s.length-1;i>=0;i--)
+
+//String转换为Char
+char[] chars = str.toCharArray();
+
+//char是否为字母
+ char c = str.charAt(i);
+   if(Character.isLetter(c))
+//char是否为数字
+  Character.isDigit(c)
+//char是否为空格
+Character.isSpaceChar(c)
+
+//char进行大小写转换
+char newChar = (char)(c+32+1);
+//如果是A~Y的大写字母则需要将其+32位转换成小写再向后移1位
+if(c>='A'&& c<='Y'){
+   char newChar = (char)(c+32+1);
+}
+
+//16进制转换10进制 0xAA = 177
+System.out.println(Integer.parseInt(s.substring(2),16));
+
+//10进制转2进制
+String str = Integer.toBinaryString(num);
+String num2 = Long.toBinaryString(num);  //位数太长
+
+//2进制转换为10进制
+Long.parseLong(sb.toString(), 2);
+Integer.parseInt(s, 2)
+
+//数组Arrays排序
+Arrays.sort(array);
+//数组Arrays比较
+Arrays.sort(xs);
+Arrays.sort(strs);
+if(!Arrays.equals(strs,xs))
+
+
+
+//位运算，与1且
+if((num&1) == 1) //如果末位为1则计数
+
+// 正则表达式
+if(!s.matches("[WASD][0-9]{1,2}")){
+  continue;
+}
+
+Pattern p1 = Pattern.compile("[A-Z]");
+if(p1.matcher(str).find()){
+    count++;
+}
+
+
+//Math函数，比较大小值
+min = Math.min(min, times);
+
+
+//保留一位小数
+String.format("%.1f", sum * 1.0 / countPositive)
+
+

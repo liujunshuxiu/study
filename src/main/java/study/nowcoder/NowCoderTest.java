@@ -1,4 +1,4 @@
-package study.newcoder;
+package study.nowcoder;
 
 import java.util.Scanner;
 
