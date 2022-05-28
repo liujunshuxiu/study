@@ -130,12 +130,12 @@ public class LJTest {
 //        linkHashMap.put("4","d");
 
 
-//        Map<String,String> treeMap = new TreeMap<>();
-//        treeMap.put("1","a");
-//        treeMap.put("1","aLJ");
-//        treeMap.put("2","b");
-//        treeMap.put("3","c");
-//        treeMap.put("4","d");
+        Map<String,String> treeMap = new TreeMap<>();
+        treeMap.put("2","b");
+        treeMap.put("3","c");
+        treeMap.put("1","a");
+        treeMap.put("1","aLJ");
+        treeMap.put("4","d");
 
 
 //        Set<String> hashSet = new HashSet<>();
@@ -145,16 +145,16 @@ public class LJTest {
 //        hashSet.add("d");
 //        hashSet.add("e");
 //
-        Set<String>  treeSet = new TreeSet<>();
-        treeSet.add("a");
-        treeSet.add("b");
-        treeSet.add("c");
-        treeSet.add("d");
-        treeSet.add("e");
-
-        String s = "5";
-        int num = 5;
-        String str = Integer.toBinaryString(num);
-        System.out.println(str);
+//        Set<String>  treeSet = new TreeSet<>();
+//        treeSet.add("a");
+//        treeSet.add("b");
+//        treeSet.add("c");
+//        treeSet.add("d");
+//        treeSet.add("e");
+//
+//        String s = "5";
+//        int num = 5;
+//        String str = Integer.toBinaryString(num);
+        System.out.println(treeMap);
     }
 }
